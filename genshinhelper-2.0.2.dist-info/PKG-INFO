@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: genshinhelper
+Version: 2.0.2
+Summary: A Python library for miHoYo bbs and HoYoLAB Community.
+Home-page: https://github.com/y1ndan/genshinhelper2
+Author: y1ndan
+Author-email: i@yindan.me
+License: GPLv3
+Keywords: 原神 签到 mihoyo hoyolab genshin genshin-impact check-in weibo
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# genshinhelper
+
+A Python library for miHoYo bbs and HoYoLAB Community.
+
+## Installation
+
+Via pip:
+
+```
+pip install genshinhelper
+```
+
+Or via source code:
+
+```
+git clone https://github.com/y1ndan/genshinhelper2.git
+cd genshinhelper2
+python setup.py install
+```
+
+## Basic Usage
+
+```python
+import genshinhelper as gh
+
+cookie = 'account_id=16393939; cookie_token=jPjdK4yd7oeIifkdYhkFhkkjde00hdUgh'
+g = gh.Genshin(cookie)
+roles = g.roles_info
+print(roles)
+```
+
+
+
